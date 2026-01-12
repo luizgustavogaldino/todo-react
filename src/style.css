@@ -1,0 +1,83 @@
+:root {
+  --bg-color: #f4f6f8;
+  --app-bg: #ffffff;
+  --text-color: #111827;
+  --button-bg: #2563eb;
+  --button-hover: #1d4ed8;
+  --delete-bg: #dc2626;
+  --delete-hover: #b91c1c;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --app-bg: #ffffff;
+  --text-color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  transition: background-color 0.4s ease;
+}
+
+.app {
+  max-width: 500px;
+  margin: 40px auto;
+  background: var(--app-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button{
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: var(--button-bg);
+  color: #fff;
+  transition: background-color 0.2s ease, transform 0.1s ease, color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button.delete {
+  background-color: var(--delete-bg);
+}
+
+
+button.delete:hover {
+  background-color: var(--delete-hover);
+}
+
+li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+li span {
+  flex: 1;
+}
+
