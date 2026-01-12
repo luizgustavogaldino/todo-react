@@ -93,6 +93,9 @@ http://localhost:5173
 
 O projeto pode ser publicado utilizando **GitHub Pages** ou qualquer serviço de hospedagem compatível com aplicações React buildadas via Vite.
 
+🔗 Demo: https://luizgustavogaldino.github.io/todo-react/
+
+
 ---
 
 ## 📌 Objetivo do Projeto
